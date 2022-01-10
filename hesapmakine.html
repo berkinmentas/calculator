@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" media="screen" href="https://fontlibrary.org//face/segment7" type="text/css"/>
+    <meta charset="UTF-8">
+    <title>Hesap Makine</title>
+    <link rel="stylesheet" href="hesapmakine.css">
+</head>
+<body>
+
+<div>
+
+    <table class="hesapmakine">
+        <tr>
+            <td class="sonuclistele"><input id="sonucekran" type="text" name="sonuc" class="sonucekrani"></td>
+        </tr>
+</div>
+<div class="tuslar">
+    <tr>
+        <td>
+            <button type="button" onclick="tus(7);" id="7" name="7" class="tus">7</button>
+
+            <button type="button" onclick="tus(8);" name="8" class="tus">8</button>
+
+            <button type="button" onclick="tus(9);" name="9" class="tus">9</button>
+
+            <button type="button" onclick="islem('+');" name="+" class="tus">+</button>
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <button type="button" onclick="tus(4);" name="4" class="tus">4</button>
+
+            <button type="button" onclick="tus(5);" name="5" class="tus">5</button>
+
+            <button type="button" onclick="tus(6);" name="6" class="tus">6</button>
+
+            <button type="button" onclick="islem('-');" name="-" class="tus">-</button>
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <button type="button" onclick="tus(1);" name="1" class="tus">1</button>
+
+            <button type="button" onclick="tus(2);" name="2" class="tus">2</button>
+
+            <button type="button" onclick="tus(3);" name="3" class="tus">3</button>
+
+            <button type="button" onclick="islem('*');" name="*" class="tus">X</button>
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <button type="button" onclick="tus(0);" name="0" class="tus">0</button>
+
+            <button type="button" onclick="tus('.');" name="." class="tus">.</button>
+
+            <button type="button" onclick="islem('/');" name="/" class="tusbolme">/</button>
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <button type="button" onclick="esittir();" name="esittir" class="esittirtusu">=</button>
+
+            <button type="button" onclick="sil();" name="C" class="tus">C</button>
+        </td>
+    </tr>
+
+    </table>
+</div>
+
+<script src="hesapmakinesi.js"></script>
+</body>
+</html>
